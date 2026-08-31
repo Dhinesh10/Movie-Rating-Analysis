@@ -1,0 +1,889 @@
+# ============================================================
+# MOVIE RATING ANALYSIS USING BIG DATA ANALYTICS WITH R
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. INSTALL REQUIRED PACKAGES
+# Run this section only once if packages are not installed
+# ------------------------------------------------------------
+
+packages <- c(
+  "dplyr",
+  "ggplot2",
+  "readr",
+  "tidyr",
+  "stringr",
+  "data.table",
+  "caret",
+  "corrplot",
+  "scales"
+)
+
+installed <- rownames(installed.packages())
+
+for (p in packages) {
+  if (!(p %in% installed)) {
+    install.packages(p)
+  }
+}
+
+# ------------------------------------------------------------
+# 2. LOAD LIBRARIES
+# ------------------------------------------------------------
+
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(tidyr)
+library(stringr)
+library(data.table)
+library(caret)
+library(corrplot)
+library(scales)
+
+# ------------------------------------------------------------
+# 3. LOAD DATASET
+# ------------------------------------------------------------
+
+# Put movies.csv in your R working directory
+
+movies <- fread("movies.csv")
+
+# Display first records
+head(movies)
+
+# Display last records
+tail(movies)
+
+# Display dataset dimensions
+cat("Number of rows:", nrow(movies), "\n")
+cat("Number of columns:", ncol(movies), "\n")
+
+# Display column names
+print(names(movies))
+
+# Display structure
+str(movies)
+
+# ------------------------------------------------------------
+# 4. STANDARDIZE COLUMN NAMES
+# ------------------------------------------------------------
+
+names(movies) <- tolower(names(movies))
+
+names(movies) <- gsub(" ", "_", names(movies))
+names(movies) <- gsub("-", "_", names(movies))
+
+print(names(movies))
+
+# ------------------------------------------------------------
+# 5. CHECK MISSING VALUES
+# ------------------------------------------------------------
+
+missing_values <- colSums(is.na(movies))
+
+print(missing_values)
+
+# Percentage of missing values
+missing_percentage <- colMeans(is.na(movies)) * 100
+
+print(missing_percentage)
+
+# ------------------------------------------------------------
+# 6. REMOVE DUPLICATE RECORDS
+# ------------------------------------------------------------
+
+movies <- unique(movies)
+
+cat("Rows after removing duplicates:",
+    nrow(movies), "\n")
+
+# ------------------------------------------------------------
+# 7. CONVERT IMPORTANT COLUMNS TO CORRECT DATA TYPES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+  movies$rating <- as.numeric(movies$rating)
+}
+
+if ("votes" %in% names(movies)) {
+  movies$votes <- as.numeric(movies$votes)
+}
+
+if ("year" %in% names(movies)) {
+  movies$year <- as.numeric(movies$year)
+}
+
+# ------------------------------------------------------------
+# 8. REMOVE INVALID RATINGS
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  movies <- movies %>%
+    filter(rating >= 0 & rating <= 10)
+
+}
+
+# ------------------------------------------------------------
+# 9. HANDLE MISSING VALUES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  movies$rating[is.na(movies$rating)] <-
+    median(movies$rating, na.rm = TRUE)
+
+}
+
+if ("votes" %in% names(movies)) {
+
+  movies$votes[is.na(movies$votes)] <- 0
+
+}
+
+if ("year" %in% names(movies)) {
+
+  movies$year[is.na(movies$year)] <-
+    median(movies$year, na.rm = TRUE)
+
+}
+
+# ------------------------------------------------------------
+# 10. DATASET SUMMARY
+# ------------------------------------------------------------
+
+summary(movies)
+
+# ------------------------------------------------------------
+# 11. BASIC STATISTICS
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  mean_rating <- mean(movies$rating, na.rm = TRUE)
+  median_rating <- median(movies$rating, na.rm = TRUE)
+  maximum_rating <- max(movies$rating, na.rm = TRUE)
+  minimum_rating <- min(movies$rating, na.rm = TRUE)
+
+  cat("Mean Rating:", mean_rating, "\n")
+  cat("Median Rating:", median_rating, "\n")
+  cat("Maximum Rating:", maximum_rating, "\n")
+  cat("Minimum Rating:", minimum_rating, "\n")
+}
+
+# ------------------------------------------------------------
+# 12. RATING DISTRIBUTION
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  ggplot(movies, aes(x = rating)) +
+    geom_histogram(
+      bins = 20,
+      fill = "steelblue",
+      color = "black"
+    ) +
+    labs(
+      title = "Distribution of Movie Ratings",
+      x = "Movie Rating",
+      y = "Number of Movies"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 13. RATING BOXPLOT
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  ggplot(movies, aes(y = rating)) +
+    geom_boxplot(fill = "orange") +
+    labs(
+      title = "Boxplot of Movie Ratings",
+      y = "Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 14. TOP 10 HIGHEST-RATED MOVIES
+# ------------------------------------------------------------
+
+if ("title" %in% names(movies) &&
+    "rating" %in% names(movies)) {
+
+  top_movies <- movies %>%
+    arrange(desc(rating)) %>%
+    select(title, rating) %>%
+    head(10)
+
+  print(top_movies)
+}
+
+# ------------------------------------------------------------
+# 15. TOP 10 MOVIES BY NUMBER OF VOTES
+# ------------------------------------------------------------
+
+if ("title" %in% names(movies) &&
+    "votes" %in% names(movies)) {
+
+  popular_movies <- movies %>%
+    arrange(desc(votes)) %>%
+    select(title, votes) %>%
+    head(10)
+
+  print(popular_movies)
+}
+
+# ------------------------------------------------------------
+# 16. TOP MOVIES VISUALIZATION
+# ------------------------------------------------------------
+
+if ("title" %in% names(movies) &&
+    "rating" %in% names(movies)) {
+
+  top_movies <- movies %>%
+    arrange(desc(rating)) %>%
+    head(10)
+
+  ggplot(
+    top_movies,
+    aes(
+      x = reorder(title, rating),
+      y = rating
+    )
+  ) +
+    geom_col(fill = "darkgreen") +
+    coord_flip() +
+    labs(
+      title = "Top 10 Highest-Rated Movies",
+      x = "Movie",
+      y = "Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 17. RATING VS NUMBER OF VOTES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies) &&
+    "votes" %in% names(movies)) {
+
+  ggplot(
+    movies,
+    aes(x = votes, y = rating)
+  ) +
+    geom_point(alpha = 0.5) +
+    geom_smooth(
+      method = "lm",
+      se = TRUE
+    ) +
+    labs(
+      title = "Relationship Between Rating and Number of Votes",
+      x = "Number of Votes",
+      y = "Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 18. CORRELATION BETWEEN RATING AND VOTES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies) &&
+    "votes" %in% names(movies)) {
+
+  correlation <- cor(
+    movies$rating,
+    movies$votes,
+    use = "complete.obs"
+  )
+
+  cat(
+    "Correlation between Rating and Votes:",
+    correlation,
+    "\n"
+  )
+}
+
+# ------------------------------------------------------------
+# 19. YEAR-WISE MOVIE COUNT
+# ------------------------------------------------------------
+
+if ("year" %in% names(movies)) {
+
+  yearly_movies <- movies %>%
+    group_by(year) %>%
+    summarise(
+      movie_count = n()
+    ) %>%
+    arrange(year)
+
+  print(yearly_movies)
+
+  ggplot(
+    yearly_movies,
+    aes(x = year, y = movie_count)
+  ) +
+    geom_line() +
+    geom_point() +
+    labs(
+      title = "Number of Movies Released by Year",
+      x = "Year",
+      y = "Number of Movies"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 20. YEAR-WISE AVERAGE RATING
+# ------------------------------------------------------------
+
+if ("year" %in% names(movies) &&
+    "rating" %in% names(movies)) {
+
+  yearly_rating <- movies %>%
+    group_by(year) %>%
+    summarise(
+      average_rating = mean(
+        rating,
+        na.rm = TRUE
+      ),
+      movie_count = n()
+    ) %>%
+    arrange(year)
+
+  print(yearly_rating)
+
+  ggplot(
+    yearly_rating,
+    aes(
+      x = year,
+      y = average_rating
+    )
+  ) +
+    geom_line() +
+    geom_point() +
+    labs(
+      title = "Average Movie Rating by Year",
+      x = "Year",
+      y = "Average Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 21. GENRE ANALYSIS
+# ------------------------------------------------------------
+
+if ("genre" %in% names(movies)) {
+
+  genre_data <- movies %>%
+    separate_rows(
+      genre,
+      sep = ","
+    ) %>%
+    mutate(
+      genre = str_trim(genre)
+    )
+
+  genre_summary <- genre_data %>%
+    group_by(genre) %>%
+    summarise(
+      movie_count = n(),
+      average_rating = mean(
+        rating,
+        na.rm = TRUE
+      )
+    ) %>%
+    arrange(desc(average_rating))
+
+  print(genre_summary)
+}
+
+# ------------------------------------------------------------
+# 22. TOP 10 GENRES BY AVERAGE RATING
+# ------------------------------------------------------------
+
+if (exists("genre_summary")) {
+
+  top_genres <- genre_summary %>%
+    filter(movie_count >= 5) %>%
+    arrange(desc(average_rating)) %>%
+    head(10)
+
+  print(top_genres)
+
+  ggplot(
+    top_genres,
+    aes(
+      x = reorder(genre, average_rating),
+      y = average_rating
+    )
+  ) +
+    geom_col(fill = "purple") +
+    coord_flip() +
+    labs(
+      title = "Top Genres by Average Rating",
+      x = "Genre",
+      y = "Average Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 23. MOST POPULAR GENRES
+# ------------------------------------------------------------
+
+if (exists("genre_summary")) {
+
+  popular_genres <- genre_summary %>%
+    arrange(desc(movie_count)) %>%
+    head(10)
+
+  print(popular_genres)
+
+  ggplot(
+    popular_genres,
+    aes(
+      x = reorder(genre, movie_count),
+      y = movie_count
+    )
+  ) +
+    geom_col(fill = "steelblue") +
+    coord_flip() +
+    labs(
+      title = "Most Common Movie Genres",
+      x = "Genre",
+      y = "Number of Movies"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 24. HIGH-RATED MOVIES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  high_rated_movies <- movies %>%
+    filter(rating >= 8)
+
+  cat(
+    "Number of movies with rating >= 8:",
+    nrow(high_rated_movies),
+    "\n"
+  )
+
+}
+
+# ------------------------------------------------------------
+# 25. LOW-RATED MOVIES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  low_rated_movies <- movies %>%
+    filter(rating < 5)
+
+  cat(
+    "Number of movies with rating < 5:",
+    nrow(low_rated_movies),
+    "\n"
+  )
+
+}
+
+# ------------------------------------------------------------
+# 26. RATING CATEGORY
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies)) {
+
+  movies <- movies %>%
+    mutate(
+      rating_category = case_when(
+        rating >= 8 ~ "Excellent",
+        rating >= 7 ~ "Good",
+        rating >= 5 ~ "Average",
+        TRUE ~ "Poor"
+      )
+    )
+
+  rating_category_summary <- movies %>%
+    count(rating_category)
+
+  print(rating_category_summary)
+
+  ggplot(
+    rating_category_summary,
+    aes(
+      x = rating_category,
+      y = n
+    )
+  ) +
+    geom_col(fill = "coral") +
+    labs(
+      title = "Movie Rating Categories",
+      x = "Rating Category",
+      y = "Number of Movies"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 27. VOTES DISTRIBUTION
+# ------------------------------------------------------------
+
+if ("votes" %in% names(movies)) {
+
+  ggplot(
+    movies,
+    aes(x = votes)
+  ) +
+    geom_histogram(
+      bins = 30,
+      fill = "skyblue",
+      color = "black"
+    ) +
+    scale_x_continuous(
+      labels = comma
+    ) +
+    labs(
+      title = "Distribution of Movie Votes",
+      x = "Number of Votes",
+      y = "Number of Movies"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 28. HIGHLY POPULAR AND HIGHLY RATED MOVIES
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies) &&
+    "votes" %in% names(movies)) {
+
+  vote_threshold <- quantile(
+    movies$votes,
+    0.75,
+    na.rm = TRUE
+  )
+
+  rating_threshold <- 8
+
+  popular_high_rated <- movies %>%
+    filter(
+      votes >= vote_threshold,
+      rating >= rating_threshold
+    ) %>%
+    arrange(desc(rating), desc(votes))
+
+  print(popular_high_rated)
+
+}
+
+# ------------------------------------------------------------
+# 29. CORRELATION MATRIX
+# ------------------------------------------------------------
+
+numeric_data <- movies %>%
+  select(
+    where(is.numeric)
+  )
+
+if (ncol(numeric_data) >= 2) {
+
+  correlation_matrix <- cor(
+    numeric_data,
+    use = "complete.obs"
+  )
+
+  print(correlation_matrix)
+
+  corrplot(
+    correlation_matrix,
+    method = "circle",
+    type = "upper"
+  )
+}
+
+# ============================================================
+# MACHINE LEARNING
+# MOVIE RATING PREDICTION
+# ============================================================
+
+# ------------------------------------------------------------
+# 30. PREPARE DATA FOR MACHINE LEARNING
+# ------------------------------------------------------------
+
+if ("rating" %in% names(movies) &&
+    "votes" %in% names(movies) &&
+    "year" %in% names(movies)) {
+
+  model_data <- movies %>%
+    select(
+      rating,
+      votes,
+      year
+    ) %>%
+    na.omit()
+
+  # Limit extremely large vote values using log transformation
+
+  model_data$log_votes <-
+    log1p(model_data$votes)
+
+  model_data$votes <- NULL
+
+  print(head(model_data))
+}
+
+# ------------------------------------------------------------
+# 31. TRAIN-TEST SPLIT
+# ------------------------------------------------------------
+
+if (exists("model_data")) {
+
+  set.seed(123)
+
+  train_index <- createDataPartition(
+    model_data$rating,
+    p = 0.80,
+    list = FALSE
+  )
+
+  train_data <- model_data[
+    train_index,
+  ]
+
+  test_data <- model_data[
+    -train_index,
+  ]
+
+  cat(
+    "Training records:",
+    nrow(train_data),
+    "\n"
+  )
+
+  cat(
+    "Testing records:",
+    nrow(test_data),
+    "\n"
+  )
+}
+
+# ------------------------------------------------------------
+# 32. LINEAR REGRESSION MODEL
+# ------------------------------------------------------------
+
+if (exists("train_data")) {
+
+  model <- lm(
+    rating ~ year + log_votes,
+    data = train_data
+  )
+
+  print(summary(model))
+
+}
+
+# ------------------------------------------------------------
+# 33. PREDICT RATINGS
+# ------------------------------------------------------------
+
+if (exists("model")) {
+
+  predictions <- predict(
+    model,
+    newdata = test_data
+  )
+
+  results <- data.frame(
+    Actual_Rating = test_data$rating,
+    Predicted_Rating = predictions
+  )
+
+  print(head(results, 20))
+
+}
+
+# ------------------------------------------------------------
+# 34. MODEL PERFORMANCE
+# ------------------------------------------------------------
+
+if (exists("results")) {
+
+  RMSE_value <- RMSE(
+    results$Predicted_Rating,
+    results$Actual_Rating
+  )
+
+  MAE_value <- MAE(
+    results$Predicted_Rating,
+    results$Actual_Rating
+  )
+
+  R2_value <- R2(
+    results$Predicted_Rating,
+    results$Actual_Rating
+  )
+
+  cat(
+    "RMSE:",
+    RMSE_value,
+    "\n"
+  )
+
+  cat(
+    "MAE:",
+    MAE_value,
+    "\n"
+  )
+
+  cat(
+    "R-Squared:",
+    R2_value,
+    "\n"
+  )
+}
+
+# ------------------------------------------------------------
+# 35. ACTUAL VS PREDICTED RATINGS
+# ------------------------------------------------------------
+
+if (exists("results")) {
+
+  ggplot(
+    results,
+    aes(
+      x = Actual_Rating,
+      y = Predicted_Rating
+    )
+  ) +
+    geom_point(alpha = 0.5) +
+    geom_abline(
+      slope = 1,
+      intercept = 0
+    ) +
+    labs(
+      title = "Actual vs Predicted Movie Ratings",
+      x = "Actual Rating",
+      y = "Predicted Rating"
+    ) +
+    theme_minimal()
+}
+
+# ------------------------------------------------------------
+# 36. PREDICT A NEW MOVIE RATING
+# ------------------------------------------------------------
+
+if (exists("model")) {
+
+  new_movie <- data.frame(
+    year = 2026,
+    log_votes = log1p(10000)
+  )
+
+  predicted_rating <- predict(
+    model,
+    newdata = new_movie
+  )
+
+  cat(
+    "Predicted Movie Rating:",
+    round(predicted_rating, 2),
+    "\n"
+  )
+}
+
+# ------------------------------------------------------------
+# 37. EXPORT ANALYSIS RESULTS
+# ------------------------------------------------------------
+
+if (exists("top_movies")) {
+
+  write.csv(
+    top_movies,
+    "top_rated_movies.csv",
+    row.names = FALSE
+  )
+
+}
+
+if (exists("genre_summary")) {
+
+  write.csv(
+    genre_summary,
+    "genre_analysis.csv",
+    row.names = FALSE
+  )
+
+}
+
+if (exists("yearly_rating")) {
+
+  write.csv(
+    yearly_rating,
+    "yearly_rating_analysis.csv",
+    row.names = FALSE
+  )
+
+}
+
+if (exists("results")) {
+
+  write.csv(
+    results,
+    "movie_rating_predictions.csv",
+    row.names = FALSE
+  )
+
+}
+
+# ------------------------------------------------------------
+# 38. FINAL PROJECT SUMMARY
+# ------------------------------------------------------------
+
+cat("\n")
+cat("============================================\n")
+cat(" MOVIE RATING ANALYSIS COMPLETED\n")
+cat("============================================\n")
+
+cat(
+  "Total Movies:",
+  nrow(movies),
+  "\n"
+)
+
+if ("rating" %in% names(movies)) {
+
+  cat(
+    "Average Rating:",
+    round(
+      mean(movies$rating, na.rm = TRUE),
+      2
+    ),
+    "\n"
+  )
+
+}
+
+if ("votes" %in% names(movies)) {
+
+  cat(
+    "Total Votes:",
+    sum(
+      movies$votes,
+      na.rm = TRUE
+    ),
+    "\n"
+  )
+
+}
+
+cat("============================================\n")
