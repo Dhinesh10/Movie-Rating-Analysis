@@ -1,0 +1,501 @@
+title	genre	year	rating	votes
+The Dark Knight	Comedy,Drama	2014	7.6	1091305
+Inception	Drama	2013	6.4	249974
+Interstellar	Mystery,Thriller	2002	7.2	260616
+The Shawshank Redemption	Action,Adventure	1996	7.1	2968962
+The Godfather	Horror,Thriller	2025	8.5	1892564
+Pulp Fiction	Fantasy,Adventure	2009	7.6	2618637
+Fight Club	Mystery,Thriller	1990	7.1	20475
+Forrest Gump	Crime,Drama	1997	6.6	158295
+The Matrix	Comedy,Drama	2005	6.7	1258449
+Avengers Endgame	Biography,Drama	2003	6.8	1025439
+The Lord of the Rings	Adventure,Sci-Fi	2001	7.7	2972481
+The Prestige	Comedy,Drama	2012	6.8	1344362
+Gladiator	Horror,Thriller	2004	7.4	388576
+The Departed	Horror,Thriller	2017	9.4	2757660
+Whiplash	Fantasy,Adventure	2023	8.1	690993
+Parasite	Crime,Drama	1991	7	2717999
+Joker	Drama	2021	8.3	623105
+Dune	Fantasy,Adventure	2012	6.8	725995
+Oppenheimer	Fantasy,Adventure	2011	5.2	1346266
+Titanic	Adventure,Sci-Fi	2014	6.3	2199111
+Avatar	Crime,Thriller	2011	5.3	762485
+Jurassic Park	Crime,Drama	2011	6.9	2298074
+The Avengers	Action,Thriller	1995	7.3	1881401
+Iron Man	Fantasy,Adventure	2004	9	1961326
+Spider-Man	Romance,Drama	2022	7.6	2683212
+Black Panther	Sci-Fi,Drama	1997	7.1	2845164
+Mad Max Fury Road	Crime,Thriller	1994	8.1	2613775
+La La Land	Action,Thriller	1993	5	1378869
+The Social Network	Romance,Drama	1995	7.5	2424470
+Gone Girl	Crime,Drama	2021	8.1	2090712
+Prisoners	Action,Drama	2019	5.7	1037048
+Arrival	Romance,Drama	2024	8.4	2242484
+Gravity	Biography,Drama	2005	7.3	153499
+Toy Story	Crime,Thriller	2002	6.7	349119
+Up	Mystery,Thriller	2019	7.5	61867
+Coco	Romance,Drama	2008	9.5	753815
+Finding Nemo	Animation,Comedy	2006	7.3	406304
+Inside Out	Action,Drama	2008	7.5	2854690
+Zootopia	Horror,Thriller	2017	6.7	1284882
+Moana	Horror,Thriller	2015	6.4	1093814
+Frozen	Action,Adventure	2015	8.1	2655337
+The Lion King	Biography,Drama	2012	6.3	1042877
+Shrek	Romance,Drama	1998	7.4	2299984
+John Wick	Romance,Drama	2001	6.6	383229
+Deadpool	Action,Adventure	1990	7.8	1912127
+Logan	Sci-Fi,Drama	1990	7.5	1068892
+Casino Royale	Sci-Fi,Drama	2023	8.2	960244
+Skyfall	Action,Adventure	2021	6.7	924280
+Top Gun Maverick	Sci-Fi,Drama	2014	7	2866951
+Ford v Ferrari	Adventure,Sci-Fi	1990	6.2	1465791
+The Dark Knight 2	Romance,Drama	2005	6.9	2468652
+Inception 2	Comedy,Drama	1994	7.4	214067
+Interstellar 2	Drama	2011	8.1	2693575
+The Shawshank Redemption 2	Animation,Comedy	2018	6.4	1943311
+The Godfather 2	Adventure,Sci-Fi	1992	8.2	2313836
+Pulp Fiction 2	Crime,Drama	2001	8.5	298590
+Fight Club 2	Adventure,Sci-Fi	2015	7.5	317848
+Forrest Gump 2	Comedy,Drama	2005	9.1	1232034
+The Matrix 2	Crime,Drama	2011	6.4	1326783
+Avengers Endgame 2	Animation,Comedy	2018	5.7	92824
+The Lord of the Rings 2	Comedy,Drama	2003	5.5	2321188
+The Prestige 2	Action,Thriller	2017	8.8	1806308
+Gladiator 2	Drama	1994	7.9	1321067
+The Departed 2	Animation,Comedy	2019	6.7	26655
+Whiplash 2	Romance,Drama	1994	7.4	342315
+Parasite 2	Sci-Fi,Drama	2001	6.2	1690255
+Joker 2	Action,Thriller	2005	9.5	460994
+Dune 2	Biography,Drama	2015	7.4	2247033
+Oppenheimer 2	Animation,Comedy	2015	7.4	2540976
+Titanic 2	Biography,Drama	2010	7.5	35207
+Avatar 2	Crime,Drama	2025	7.7	938341
+Jurassic Park 2	Action,Thriller	2022	7.4	1567553
+The Avengers 2	Drama	2019	6.5	1917045
+Iron Man 2	Romance,Drama	2012	7.8	2844440
+Spider-Man 2	Action,Adventure	1999	9	353799
+Black Panther 2	Romance,Drama	1994	8.5	1207568
+Mad Max Fury Road 2	Comedy,Drama	2025	8.8	1523188
+La La Land 2	Romance,Drama	2023	6.5	170602
+The Social Network 2	Mystery,Thriller	2020	6.1	394774
+Gone Girl 2	Fantasy,Adventure	1999	6.9	217785
+Prisoners 2	Action,Adventure	2008	7.3	1387480
+Arrival 2	Adventure,Sci-Fi	2021	8.3	1208552
+Gravity 2	Sci-Fi,Drama	1990	5.6	2856494
+Toy Story 2	Action,Drama	1994	8.8	1713636
+Up 2	Drama	1993	7.1	2948262
+Coco 2	Action,Thriller	2005	6.9	2393793
+Finding Nemo 2	Fantasy,Adventure	2013	6.2	1297576
+Inside Out 2	Drama	2005	5.6	1739493
+Zootopia 2	Action,Thriller	1991	8	1181387
+Moana 2	Sci-Fi,Drama	2017	7.4	1808110
+Frozen 2	Crime,Thriller	2021	5.7	246046
+The Lion King 2	Crime,Thriller	2016	6	2748885
+Shrek 2	Biography,Drama	2009	7	1924901
+John Wick 2	Drama	2013	9	1896720
+Deadpool 2	Crime,Thriller	2001	6.7	146970
+Logan 2	Mystery,Thriller	2024	5.8	2741970
+Casino Royale 2	Action,Adventure	2022	7	1367723
+Skyfall 2	Action,Thriller	2022	6.9	1055646
+Top Gun Maverick 2	Biography,Drama	2001	4.6	2428581
+Ford v Ferrari 2	Romance,Drama	1992	6.8	79641
+The Dark Knight 3	Action,Thriller	1990	6.5	12615
+Inception 3	Biography,Drama	2022	8	2906995
+Interstellar 3	Sci-Fi,Drama	1999	9	1343776
+The Shawshank Redemption 3	Drama	2018	8.4	2488131
+The Godfather 3	Sci-Fi,Drama	2002	6.9	1575333
+Pulp Fiction 3	Action,Adventure	2001	6.2	2927837
+Fight Club 3	Action,Adventure	2020	9.8	2049391
+Forrest Gump 3	Fantasy,Adventure	1991	7.4	2495338
+The Matrix 3	Sci-Fi,Drama	2024	7.2	1170939
+Avengers Endgame 3	Comedy,Drama	2012	7.2	797157
+The Lord of the Rings 3	Romance,Drama	2006	7.4	647796
+The Prestige 3	Animation,Comedy	2015	7.1	1549802
+Gladiator 3	Sci-Fi,Drama	1997	6.7	1679187
+The Departed 3	Fantasy,Adventure	2018	6.7	800601
+Whiplash 3	Crime,Drama	2015	7.3	1959906
+Parasite 3	Mystery,Thriller	1999	6.8	1684041
+Joker 3	Action,Thriller	2015	6.6	1820322
+Dune 3	Action,Adventure	2023	7.3	1044757
+Oppenheimer 3	Crime,Drama	1996	7	2145972
+Titanic 3	Fantasy,Adventure	1993	8.7	965418
+Avatar 3	Biography,Drama	2000	4.4	497258
+Jurassic Park 3	Animation,Comedy	2018	8.3	1195725
+The Avengers 3	Romance,Drama	2025	8.4	1174430
+Iron Man 3	Romance,Drama	2014	5.2	2709949
+Spider-Man 3	Romance,Drama	2010	6.8	449125
+Black Panther 3	Mystery,Thriller	2025	6.4	29125
+Mad Max Fury Road 3	Animation,Comedy	1999	5.9	2834052
+La La Land 3	Mystery,Thriller	1998	6.4	1508130
+The Social Network 3	Action,Adventure	2013	6.1	1277147
+Gone Girl 3	Mystery,Thriller	2024	8.9	488511
+Prisoners 3	Action,Drama	2024	8.1	1222971
+Arrival 3	Animation,Comedy	2025	8.6	2528076
+Gravity 3	Comedy,Drama	2007	7.8	316705
+Toy Story 3	Animation,Comedy	2021	5.9	101876
+Up 3	Fantasy,Adventure	2013	6.8	1914642
+Coco 3	Action,Drama	2012	7.8	2931139
+Finding Nemo 3	Romance,Drama	2021	6.1	2865281
+Inside Out 3	Fantasy,Adventure	2001	7.9	1330728
+Zootopia 3	Fantasy,Adventure	2002	6.8	158556
+Moana 3	Action,Adventure	2012	6.8	634957
+Frozen 3	Horror,Thriller	2014	8	2657999
+The Lion King 3	Adventure,Sci-Fi	2024	7.5	463285
+Shrek 3	Action,Drama	2019	6.9	1676773
+John Wick 3	Fantasy,Adventure	2006	8.5	1983667
+Deadpool 3	Adventure,Sci-Fi	2009	6.1	1548729
+Logan 3	Adventure,Sci-Fi	2014	7.9	2627644
+Casino Royale 3	Action,Drama	2011	7.8	978580
+Skyfall 3	Horror,Thriller	2002	7	2826396
+Top Gun Maverick 3	Crime,Drama	2008	7.5	742988
+Ford v Ferrari 3	Biography,Drama	2025	6	2733219
+The Dark Knight 4	Comedy,Drama	2001	8.2	2039040
+Inception 4	Biography,Drama	2008	7	683068
+Interstellar 4	Animation,Comedy	2001	6.8	2740456
+The Shawshank Redemption 4	Romance,Drama	1998	8.3	2620480
+The Godfather 4	Comedy,Drama	1996	6.6	2576018
+Pulp Fiction 4	Animation,Comedy	2017	5.8	721884
+Fight Club 4	Fantasy,Adventure	2003	5.7	2516791
+Forrest Gump 4	Romance,Drama	2020	7.7	520277
+The Matrix 4	Action,Thriller	2008	6	2330201
+Avengers Endgame 4	Action,Drama	2005	9.1	2582617
+The Lord of the Rings 4	Comedy,Drama	1994	5.2	2888198
+The Prestige 4	Comedy,Drama	2024	8.9	982969
+Gladiator 4	Sci-Fi,Drama	2001	7	36821
+The Departed 4	Fantasy,Adventure	2014	7.2	2433093
+Whiplash 4	Crime,Drama	2010	6.5	156998
+Parasite 4	Adventure,Sci-Fi	2025	7.7	1939262
+Joker 4	Romance,Drama	2012	7.3	2887796
+Dune 4	Fantasy,Adventure	2005	8.2	395083
+Oppenheimer 4	Crime,Thriller	2003	7.4	2336041
+Titanic 4	Horror,Thriller	2020	7.5	2737082
+Avatar 4	Adventure,Sci-Fi	1994	6.8	1101000
+Jurassic Park 4	Action,Drama	2024	7.1	1577090
+The Avengers 4	Adventure,Sci-Fi	2012	7.5	1400372
+Iron Man 4	Crime,Drama	2018	5.5	1076799
+Spider-Man 4	Action,Adventure	2000	6	1962477
+Black Panther 4	Sci-Fi,Drama	2007	8	2856122
+Mad Max Fury Road 4	Adventure,Sci-Fi	2001	7.4	664968
+La La Land 4	Action,Drama	1998	7.1	2306438
+The Social Network 4	Crime,Drama	1999	7.3	2784336
+Gone Girl 4	Biography,Drama	2006	7.6	1939404
+Prisoners 4	Comedy,Drama	1996	6.7	1028900
+Arrival 4	Action,Adventure	2002	6.4	880612
+Gravity 4	Sci-Fi,Drama	1998	7.3	359190
+Toy Story 4	Comedy,Drama	2016	5.9	80473
+Up 4	Horror,Thriller	1991	7.6	634622
+Coco 4	Animation,Comedy	1994	5.6	2043323
+Finding Nemo 4	Action,Adventure	2018	8.2	1048673
+Inside Out 4	Action,Adventure	2008	7.7	1502525
+Zootopia 4	Biography,Drama	1997	7.6	2385333
+Moana 4	Biography,Drama	1990	8.3	2592161
+Frozen 4	Romance,Drama	2011	9	1913084
+The Lion King 4	Mystery,Thriller	2006	8.3	1595976
+Shrek 4	Adventure,Sci-Fi	1996	5.2	225549
+John Wick 4	Action,Adventure	2014	5.9	1317691
+Deadpool 4	Comedy,Drama	1993	6.7	2264355
+Logan 4	Action,Drama	2025	7.3	2095029
+Casino Royale 4	Drama	1995	7.8	2862009
+Skyfall 4	Mystery,Thriller	2020	6.5	747919
+Top Gun Maverick 4	Drama	2008	7.4	1080424
+Ford v Ferrari 4	Sci-Fi,Drama	2016	6.4	1244880
+The Dark Knight 5	Crime,Drama	1999	6.7	1836685
+Inception 5	Comedy,Drama	2015	5.9	2233484
+Interstellar 5	Comedy,Drama	2008	6.3	1343999
+The Shawshank Redemption 5	Mystery,Thriller	1992	5.9	2381432
+The Godfather 5	Action,Adventure	2002	6.3	1655253
+Pulp Fiction 5	Horror,Thriller	2017	8.3	1102627
+Fight Club 5	Mystery,Thriller	2009	6.2	405272
+Forrest Gump 5	Drama	2017	9.8	1715999
+The Matrix 5	Mystery,Thriller	1997	7.6	571607
+Avengers Endgame 5	Comedy,Drama	1990	7.5	2075906
+The Lord of the Rings 5	Horror,Thriller	1992	6.3	1009059
+The Prestige 5	Adventure,Sci-Fi	2002	8	2517834
+Gladiator 5	Crime,Thriller	2017	6.7	2086713
+The Departed 5	Romance,Drama	2014	7.3	1502181
+Whiplash 5	Action,Thriller	2022	9.8	2779999
+Parasite 5	Biography,Drama	1995	7.2	1914222
+Joker 5	Mystery,Thriller	2021	8.4	2811360
+Dune 5	Sci-Fi,Drama	2010	6.4	549384
+Oppenheimer 5	Animation,Comedy	2005	7.3	1999754
+Titanic 5	Crime,Drama	2010	9	851038
+Avatar 5	Crime,Thriller	2000	6.6	987971
+Jurassic Park 5	Romance,Drama	2025	8.7	59682
+The Avengers 5	Romance,Drama	2024	8	2446959
+Iron Man 5	Romance,Drama	2008	6.7	2399106
+Spider-Man 5	Romance,Drama	2009	7.8	1367308
+Black Panther 5	Drama	2007	8.3	1702167
+Mad Max Fury Road 5	Sci-Fi,Drama	2003	7.8	1189054
+La La Land 5	Sci-Fi,Drama	2004	5.6	823846
+The Social Network 5	Horror,Thriller	2020	6.6	2994434
+Gone Girl 5	Biography,Drama	1990	7.1	2867840
+Prisoners 5	Comedy,Drama	1992	7	259017
+Arrival 5	Romance,Drama	2005	7.8	955654
+Gravity 5	Animation,Comedy	2012	7.4	1357633
+Toy Story 5	Comedy,Drama	2000	6	2234736
+Up 5	Sci-Fi,Drama	2001	7.6	705975
+Coco 5	Action,Drama	1999	7.9	2679656
+Finding Nemo 5	Action,Drama	2021	7.9	2977831
+Inside Out 5	Animation,Comedy	2005	8.3	748513
+Zootopia 5	Horror,Thriller	1997	8.1	2789390
+Moana 5	Sci-Fi,Drama	2001	7.7	1252578
+Frozen 5	Animation,Comedy	2013	6.9	145039
+The Lion King 5	Drama	2017	5.4	424726
+Shrek 5	Mystery,Thriller	1997	7.6	1419397
+John Wick 5	Animation,Comedy	2017	7.5	2109941
+Deadpool 5	Adventure,Sci-Fi	2025	7.5	700836
+Logan 5	Comedy,Drama	2015	5.9	699456
+Casino Royale 5	Crime,Thriller	1997	6.2	1989751
+Skyfall 5	Fantasy,Adventure	2017	8	86865
+Top Gun Maverick 5	Horror,Thriller	2017	7.3	2084798
+Ford v Ferrari 5	Animation,Comedy	2025	7.9	755450
+The Dark Knight 6	Sci-Fi,Drama	2016	7.3	1949522
+Inception 6	Crime,Drama	2006	7	175711
+Interstellar 6	Action,Drama	1998	7.8	64146
+The Shawshank Redemption 6	Adventure,Sci-Fi	2022	6.6	266298
+The Godfather 6	Biography,Drama	2009	7.3	1531314
+Pulp Fiction 6	Romance,Drama	2002	6.8	1854251
+Fight Club 6	Fantasy,Adventure	2017	6.9	1883876
+Forrest Gump 6	Action,Adventure	2018	7	2827184
+The Matrix 6	Horror,Thriller	2002	7.2	156183
+Avengers Endgame 6	Crime,Thriller	2024	6.7	632759
+The Lord of the Rings 6	Fantasy,Adventure	1995	8.4	536937
+The Prestige 6	Animation,Comedy	2007	6.3	1411322
+Gladiator 6	Drama	1994	7	1370409
+The Departed 6	Action,Drama	2014	6.9	1812340
+Whiplash 6	Sci-Fi,Drama	1991	8.7	1988255
+Parasite 6	Action,Drama	1999	7.5	1906539
+Joker 6	Biography,Drama	2019	8.1	567456
+Dune 6	Drama	1994	5.7	1455965
+Oppenheimer 6	Romance,Drama	2022	7.5	994670
+Titanic 6	Sci-Fi,Drama	1990	8.2	2710144
+Avatar 6	Comedy,Drama	2007	7.1	212330
+Jurassic Park 6	Action,Thriller	2021	8.3	1245577
+The Avengers 6	Adventure,Sci-Fi	2000	6.8	2262792
+Iron Man 6	Action,Drama	2010	8.7	1793225
+Spider-Man 6	Crime,Drama	2015	9.6	2322812
+Black Panther 6	Action,Drama	2014	6.7	562172
+Mad Max Fury Road 6	Fantasy,Adventure	2011	6.7	522498
+La La Land 6	Action,Drama	2016	8.8	2703869
+The Social Network 6	Horror,Thriller	2002	8.9	1808492
+Gone Girl 6	Action,Drama	2022	6.4	75888
+Prisoners 6	Action,Thriller	2023	6.9	2653341
+Arrival 6	Action,Thriller	2024	7	2616379
+Gravity 6	Romance,Drama	1990	6	1776267
+Toy Story 6	Crime,Thriller	2010	6.4	2330253
+Up 6	Comedy,Drama	1995	6.2	1083160
+Coco 6	Crime,Drama	2017	6.4	1300535
+Finding Nemo 6	Action,Drama	2006	7.3	1684005
+Inside Out 6	Action,Drama	1994	7.5	2202763
+Zootopia 6	Adventure,Sci-Fi	2020	8.8	1498118
+Moana 6	Sci-Fi,Drama	1994	6.3	2527319
+Frozen 6	Action,Thriller	1992	8.3	2260634
+The Lion King 6	Crime,Drama	2012	7.1	2395837
+Shrek 6	Romance,Drama	1999	7	234886
+John Wick 6	Biography,Drama	1999	7.9	1245629
+Deadpool 6	Crime,Thriller	2008	6.2	2559444
+Logan 6	Comedy,Drama	2006	7.5	501674
+Casino Royale 6	Drama	2010	7.5	2882277
+Skyfall 6	Comedy,Drama	2003	7.8	2749496
+Top Gun Maverick 6	Horror,Thriller	1998	7.3	195746
+Ford v Ferrari 6	Fantasy,Adventure	1990	9.8	2343894
+The Dark Knight 7	Horror,Thriller	2002	6.5	511583
+Inception 7	Action,Drama	1993	6.8	2115285
+Interstellar 7	Action,Adventure	1990	6.6	1012884
+The Shawshank Redemption 7	Crime,Thriller	2021	6.6	867464
+The Godfather 7	Fantasy,Adventure	2023	6.3	49604
+Pulp Fiction 7	Crime,Drama	2017	8.4	864163
+Fight Club 7	Drama	2020	8.7	1589378
+Forrest Gump 7	Action,Thriller	1997	6.7	2786767
+The Matrix 7	Crime,Thriller	2015	6.3	565178
+Avengers Endgame 7	Crime,Thriller	2023	7.7	1140734
+The Lord of the Rings 7	Horror,Thriller	1992	6.7	2155645
+The Prestige 7	Action,Adventure	2001	7.6	206268
+Gladiator 7	Action,Drama	1990	7.4	1207361
+The Departed 7	Animation,Comedy	1994	5.7	771648
+Whiplash 7	Romance,Drama	2019	8.8	2891505
+Parasite 7	Horror,Thriller	2019	9	742796
+Joker 7	Crime,Thriller	2006	6.7	2065653
+Dune 7	Mystery,Thriller	2012	6.7	542515
+Oppenheimer 7	Adventure,Sci-Fi	2004	7.6	2996502
+Titanic 7	Drama	2010	7.5	1577722
+Avatar 7	Romance,Drama	2003	7.8	258181
+Jurassic Park 7	Horror,Thriller	1991	8.9	94518
+The Avengers 7	Drama	2000	7	1435677
+Iron Man 7	Adventure,Sci-Fi	2023	6.5	1998697
+Spider-Man 7	Biography,Drama	2023	5.9	2055280
+Black Panther 7	Adventure,Sci-Fi	2007	6.3	229604
+Mad Max Fury Road 7	Action,Adventure	2019	7.2	842686
+La La Land 7	Adventure,Sci-Fi	2004	8.8	194010
+The Social Network 7	Drama	2016	6.7	1158923
+Gone Girl 7	Comedy,Drama	2023	7.5	1995951
+Prisoners 7	Drama	2022	7.2	1493793
+Arrival 7	Animation,Comedy	2013	8.5	2551814
+Gravity 7	Action,Drama	2004	9.8	2922551
+Toy Story 7	Fantasy,Adventure	2019	6.7	1345113
+Up 7	Comedy,Drama	2006	6.7	1125405
+Coco 7	Action,Thriller	1994	8.2	1080083
+Finding Nemo 7	Fantasy,Adventure	2018	7.9	695392
+Inside Out 7	Action,Drama	1993	9	1365473
+Zootopia 7	Horror,Thriller	1999	7.8	1061399
+Moana 7	Romance,Drama	2006	6.9	2995419
+Frozen 7	Animation,Comedy	1999	7.9	2732884
+The Lion King 7	Animation,Comedy	2006	8.1	204951
+Shrek 7	Action,Thriller	2009	8.1	1980790
+John Wick 7	Comedy,Drama	2013	7.6	556155
+Deadpool 7	Action,Adventure	1994	8.2	403822
+Logan 7	Sci-Fi,Drama	2023	8.5	2165660
+Casino Royale 7	Biography,Drama	1995	8.5	378039
+Skyfall 7	Adventure,Sci-Fi	1991	7.6	116992
+Top Gun Maverick 7	Comedy,Drama	2002	7.1	2169892
+Ford v Ferrari 7	Romance,Drama	2000	7.3	987253
+The Dark Knight 8	Biography,Drama	2012	8.5	2823599
+Inception 8	Animation,Comedy	2005	6.5	2370552
+Interstellar 8	Drama	2020	7.7	2558879
+The Shawshank Redemption 8	Romance,Drama	2000	6.8	1347598
+The Godfather 8	Action,Drama	2005	7.3	2232979
+Pulp Fiction 8	Action,Thriller	1997	8.6	2747643
+Fight Club 8	Action,Drama	1993	7.4	843481
+Forrest Gump 8	Sci-Fi,Drama	1993	7	166075
+The Matrix 8	Romance,Drama	2014	5.9	2091045
+Avengers Endgame 8	Crime,Drama	1992	8	1909302
+The Lord of the Rings 8	Crime,Drama	2021	7.8	1548575
+The Prestige 8	Horror,Thriller	1992	9.3	494448
+Gladiator 8	Comedy,Drama	2016	7	2326841
+The Departed 8	Animation,Comedy	2018	7.5	2496117
+Whiplash 8	Animation,Comedy	2021	7.5	2348703
+Parasite 8	Adventure,Sci-Fi	2008	8.9	2747481
+Joker 8	Adventure,Sci-Fi	2010	7.1	714436
+Dune 8	Adventure,Sci-Fi	1994	7.5	1560854
+Oppenheimer 8	Drama	2007	7.8	781141
+Titanic 8	Fantasy,Adventure	2017	7.3	272330
+Avatar 8	Crime,Thriller	2011	6.8	1554705
+Jurassic Park 8	Fantasy,Adventure	2010	7.5	2413159
+The Avengers 8	Action,Drama	1995	8.4	2457339
+Iron Man 8	Fantasy,Adventure	1990	6.3	1705097
+Spider-Man 8	Drama	1994	7.4	2551831
+Black Panther 8	Horror,Thriller	2001	6.6	2140480
+Mad Max Fury Road 8	Action,Drama	2015	8.4	835536
+La La Land 8	Fantasy,Adventure	2023	5.8	2370322
+The Social Network 8	Drama	2003	6.7	2388778
+Gone Girl 8	Crime,Thriller	2015	7.7	2884291
+Prisoners 8	Fantasy,Adventure	2016	8.8	1281117
+Arrival 8	Drama	1998	7.1	754796
+Gravity 8	Sci-Fi,Drama	2015	6.7	2222634
+Toy Story 8	Adventure,Sci-Fi	2011	9.1	1305987
+Up 8	Sci-Fi,Drama	2019	5.8	1117695
+Coco 8	Animation,Comedy	2006	4.9	309123
+Finding Nemo 8	Adventure,Sci-Fi	2015	7.7	2268615
+Inside Out 8	Animation,Comedy	2025	6.7	1190902
+Zootopia 8	Mystery,Thriller	1990	6.3	1804419
+Moana 8	Action,Thriller	1997	8	2965521
+Frozen 8	Sci-Fi,Drama	2024	7.4	1147616
+The Lion King 8	Action,Thriller	2004	6.7	2957066
+Shrek 8	Action,Thriller	2011	6	2284646
+John Wick 8	Crime,Thriller	2003	8	310875
+Deadpool 8	Adventure,Sci-Fi	2015	8	2126953
+Logan 8	Mystery,Thriller	2017	7.1	1271800
+Casino Royale 8	Animation,Comedy	2012	9	1044827
+Skyfall 8	Drama	2003	5.9	194283
+Top Gun Maverick 8	Action,Drama	2013	5.8	2116404
+Ford v Ferrari 8	Drama	1991	6.5	1015916
+The Dark Knight 9	Action,Drama	2015	7.3	2835217
+Inception 9	Sci-Fi,Drama	2003	7.5	1933960
+Interstellar 9	Crime,Drama	1996	7	669255
+The Shawshank Redemption 9	Drama	1992	7.7	2314681
+The Godfather 9	Fantasy,Adventure	2012	5.9	908169
+Pulp Fiction 9	Fantasy,Adventure	2007	8.6	1105349
+Fight Club 9	Comedy,Drama	2024	7.2	1665242
+Forrest Gump 9	Adventure,Sci-Fi	2004	8.4	1840403
+The Matrix 9	Action,Drama	2014	7.4	378344
+Avengers Endgame 9	Action,Drama	2017	7.2	11199
+The Lord of the Rings 9	Romance,Drama	1999	7.7	534503
+The Prestige 9	Horror,Thriller	2006	7.7	2616304
+Gladiator 9	Adventure,Sci-Fi	2011	7.6	118913
+The Departed 9	Crime,Thriller	2015	8.6	1982743
+Whiplash 9	Comedy,Drama	2014	7.5	1692628
+Parasite 9	Crime,Thriller	2006	8	1792613
+Joker 9	Sci-Fi,Drama	2002	6.9	215900
+Dune 9	Sci-Fi,Drama	2009	8.7	2657525
+Oppenheimer 9	Crime,Thriller	2014	6.6	1866190
+Titanic 9	Crime,Thriller	1993	8.9	392636
+Avatar 9	Mystery,Thriller	1999	7.1	390454
+Jurassic Park 9	Adventure,Sci-Fi	1992	5.9	2135719
+The Avengers 9	Crime,Thriller	2007	7.4	1747121
+Iron Man 9	Fantasy,Adventure	2025	6.1	18573
+Spider-Man 9	Horror,Thriller	2011	7.6	36535
+Black Panther 9	Horror,Thriller	2023	6.5	1245125
+Mad Max Fury Road 9	Action,Thriller	1997	6.6	234282
+La La Land 9	Crime,Drama	2008	5.4	2712313
+The Social Network 9	Sci-Fi,Drama	1995	6.8	1918870
+Gone Girl 9	Action,Drama	2015	4.7	615305
+Prisoners 9	Romance,Drama	2023	5.6	1583746
+Arrival 9	Action,Adventure	1995	8	726831
+Gravity 9	Action,Drama	2022	8.1	1794791
+Toy Story 9	Crime,Drama	2011	7.7	2159581
+Up 9	Romance,Drama	2010	6.2	758271
+Coco 9	Mystery,Thriller	1995	7.3	2982948
+Finding Nemo 9	Adventure,Sci-Fi	1995	7.2	668189
+Inside Out 9	Drama	1993	6.1	2878617
+Zootopia 9	Adventure,Sci-Fi	2019	8.6	287813
+Moana 9	Action,Drama	2000	7.8	87968
+Frozen 9	Action,Drama	2019	7.1	2043537
+The Lion King 9	Romance,Drama	2020	7	192203
+Shrek 9	Romance,Drama	2013	7.4	1094109
+John Wick 9	Sci-Fi,Drama	1998	5.2	1122937
+Deadpool 9	Mystery,Thriller	1992	7.1	2805302
+Logan 9	Sci-Fi,Drama	2020	6.4	294394
+Casino Royale 9	Crime,Drama	2025	6.3	1613825
+Skyfall 9	Crime,Thriller	2013	6.9	1127298
+Top Gun Maverick 9	Adventure,Sci-Fi	2020	9.1	2733960
+Ford v Ferrari 9	Romance,Drama	1995	7.9	1859734
+The Dark Knight 10	Animation,Comedy	1991	6.7	2890805
+Inception 10	Crime,Drama	2009	7.9	2022734
+Interstellar 10	Fantasy,Adventure	2017	8.7	2642549
+The Shawshank Redemption 10	Mystery,Thriller	2000	8.2	1703877
+The Godfather 10	Action,Drama	1993	7.3	1253057
+Pulp Fiction 10	Sci-Fi,Drama	2004	6.4	104711
+Fight Club 10	Crime,Drama	1995	7.9	1491187
+Forrest Gump 10	Action,Adventure	2019	7.5	488189
+The Matrix 10	Adventure,Sci-Fi	1991	8.1	923660
+Avengers Endgame 10	Romance,Drama	2004	7.9	2958604
+The Lord of the Rings 10	Action,Drama	2000	8.3	2948393
+The Prestige 10	Drama	1997	6.7	1079060
+Gladiator 10	Action,Adventure	2015	8.6	2260276
+The Departed 10	Mystery,Thriller	1994	7.4	693545
+Whiplash 10	Crime,Drama	1995	9.3	991969
+Parasite 10	Comedy,Drama	2015	6.3	146288
+Joker 10	Action,Drama	1993	8.9	638887
+Dune 10	Adventure,Sci-Fi	2008	7.5	2633078
+Oppenheimer 10	Action,Thriller	2009	6.6	2788310
+Titanic 10	Animation,Comedy	2022	6.7	969116
+Avatar 10	Biography,Drama	2009	6.5	23929
+Jurassic Park 10	Action,Adventure	2001	7.6	1251456
+The Avengers 10	Crime,Thriller	1990	7.7	1490536
+Iron Man 10	Biography,Drama	2015	6.7	2870229
+Spider-Man 10	Adventure,Sci-Fi	2003	7.3	2985352
+Black Panther 10	Fantasy,Adventure	2000	9.4	1809877
+Mad Max Fury Road 10	Sci-Fi,Drama	2025	8.9	1066423
+La La Land 10	Fantasy,Adventure	2002	7.7	1721356
+The Social Network 10	Action,Thriller	1992	7.1	556610
+Gone Girl 10	Action,Adventure	2022	7.3	964663
+Prisoners 10	Crime,Thriller	1995	7.8	1531391
+Arrival 10	Comedy,Drama	1999	5.7	8467
+Gravity 10	Action,Thriller	1994	7	2323023
+Toy Story 10	Action,Adventure	2012	5.5	1257600
+Up 10	Horror,Thriller	1999	7.6	1213761
+Coco 10	Biography,Drama	1991	7.7	552967
+Finding Nemo 10	Action,Thriller	2002	6.6	252037
+Inside Out 10	Biography,Drama	1991	8.9	1756624
+Zootopia 10	Action,Drama	2009	6	842031
+Moana 10	Fantasy,Adventure	1990	5.7	865145
+Frozen 10	Action,Drama	1998	7.4	1428627
+The Lion King 10	Animation,Comedy	2006	8.2	936272
+Shrek 10	Horror,Thriller	1998	8.8	471582
+John Wick 10	Crime,Thriller	2000	6.8	1921777
+Deadpool 10	Comedy,Drama	2004	8	61045
+Logan 10	Mystery,Thriller	2013	7.3	2321546
+Casino Royale 10	Biography,Drama	2024	7.1	2825158
+Skyfall 10	Comedy,Drama	2019	8.2	2097094
+Top Gun Maverick 10	Biography,Drama	2020	8	1616277
+Ford v Ferrari 10	Adventure,Sci-Fi	1994	5.7	2348149
